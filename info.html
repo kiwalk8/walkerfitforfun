@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Request More Info</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes Offered</a>
+        <a href="info.html">More Info</a>
+    </nav>
+
     <form method="get" action="thankyou-2.html">
         <label for="fname">First Name:</label>
         <input type="text" name="fname" id="fname">
@@ -16,7 +23,7 @@
         <label for="email">Email:</label>
         <input type="email" id="email">
         <label for="phone">Phone Number:</label>
-        <input type="phone" name="phone" id="phone">
+        <input type="tel" name="phone" id="phone">
         <label for="reach">Best way to reach you:</label>
         <select id="reach" name="reach">
             <option value="email">Email</option>
@@ -27,9 +34,9 @@
         </select>
         <p>Preferred Time:</p>
         <input type="radio" name="time" id="am">
-        <label for="time">AM</label>
+        <label for="am">AM</label>
         <input type="radio" name="time" id="pm">
-        <label for="time">PM</label>
+        <label for="pm">PM</label>
 
         <p>Classes of Interest:</p>
         <input type="checkbox" name="xtrain" id="xtrain">
@@ -44,7 +51,7 @@
         <input type="checkbox" name="bodyp" id="bodyp">
         <label for="bodyp">Cross Training</label>
 
-        <input type="checkbox" name="bodyc" id="xbodyc">
+        <input type="checkbox" name="bodyc" id="bodyc">
         <label for="bodyc">Body Combat</label>
 
         <input type="checkbox" name="step" id="step">
@@ -59,7 +66,8 @@
         <input type="checkbox" name="zumba" id="zumba">
         <label for="zumba">Zumba</label>
 
-<!-- addtl fields here -->
+        <!-- addtl fields here, make required -->
+        <input type="submit">
     </form>
 </body>
 

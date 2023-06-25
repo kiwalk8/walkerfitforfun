@@ -1,5 +1,35 @@
 table, tr, td {
-    border: 2px;
+    border-collapse: collapse;
+    font-size: 10pt;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#days {
+    text-align: center;
+    font-weight: bold;
+    background-color: bisque;
+}
+
+td {
+    width: 130px;
+    vertical-align: top;
+    border: 1pt;
     border-style: solid;
-    border-color: black;
+}
+
+th {
+    font-size: 24pt;
+}
+
+nav {
+    text-align: right;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 10px;
+    background-color: rgb(149, 149, 149);
+}
+
+body {
+    margin: 0px;
 }
