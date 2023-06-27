@@ -4,71 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request More Info</title>
+    <title>Classes Offered</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <!-- Kimmy Walker, Fit for Fun Fitness Club, June 25, 2023 -->
 </head>
 
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="classes.html">Classes Offered</a>
-        <a href="info.html">More Info</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes Offered</a></li>
+            <li><a href="info.html">Sign Up</a></li>
+        </ul>
     </nav>
-
+    <h3>Sign up for a class with the</h3>
+    <h1>Fit For Fun Fitness Club</h1>
     <form method="get" action="thankyou-2.html">
-        <label for="fname">First Name:</label>
-        <input type="text" name="fname" id="fname">
-        <label for="lname">Last Name:</label>
-        <input type="text" name="lname" id="lname">
-        <label for="email">Email:</label>
-        <input type="email" id="email">
-        <label for="phone">Phone Number:</label>
-        <input type="tel" name="phone" id="phone">
-        <label for="reach">Best way to reach you:</label>
-        <select id="reach" name="reach">
-            <option value="email">Email</option>
-            <option value="phone">Phone</option>
-            <option value="owl">Owl</option>
-            <option value="pidgeon">Carrier Pidgeon</option>
-            <option value="tgram">Telegram</option>
-        </select>
-        <p>Preferred Time:</p>
-        <input type="radio" name="time" id="am">
-        <label for="am">AM</label>
-        <input type="radio" name="time" id="pm">
-        <label for="pm">PM</label>
+        <div id="formdiv">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fname" class="label">First Name:</label>
+                <input type="text" name="fname" id="fname" class="coninfo" required>
+                <label for="lname" class="label">Last Name:</label>
+                <input type="text" name="lname" id="lname" class="coninfo" required>
+                <label for="email" class="label">Email:</label>
+                <input type="email" id="email" class="coninfo">
+                <label for="phone" class="label">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" class="coninfo">
+                <label for="reach" class="label">Best way to reach you:</label>
+                <select id="reach" name="reach">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="owl">Owl</option>
+                    <option value="pidgeon">Carrier Pigeon</option>
+                    <option value="tgram">Telegram</option>
+                </select>
+            </fieldset>
 
-        <p>Classes of Interest:</p>
-        <input type="checkbox" name="xtrain" id="xtrain">
-        <label for="xtrain">Cross Training</label>
 
-        <input type="checkbox" name="sprint" id="sprint">
-        <label for="sprint">Sprint</label>
 
-        <input type="checkbox" name="Spin" id="spin">
-        <label for="spin">Spin</label>
 
-        <input type="checkbox" name="bodyp" id="bodyp">
-        <label for="bodyp">Cross Training</label>
+            <fieldset>
+                <legend>Classes of Interest</legend>
+                <input type="checkbox" name="xtrain" id="xtrain">
+                <label for="xtrain">Cross Training</label>
 
-        <input type="checkbox" name="bodyc" id="bodyc">
-        <label for="bodyc">Body Combat</label>
+                <input type="checkbox" name="sprint" id="sprint">
+                <label for="sprint">Sprint</label>
 
-        <input type="checkbox" name="step" id="step">
-        <label for="step">Step Interval</label>
+                <input type="checkbox" name="Spin" id="spin">
+                <label for="spin">Spin</label>
 
-        <input type="checkbox" name="advxt" id="advxt">
-        <label for="advxt">Advanced Cross Training</label>
+                <input type="checkbox" name="bodyp" id="bodyp">
+                <label for="bodyp">Cross Training</label>
 
-        <input type="checkbox" name="mxfit" id="mxfit">
-        <label for="mxfit">MixxedFIT</label>
+                <input type="checkbox" name="bodyc" id="bodyc">
+                <label for="bodyc">Body Combat</label>
 
-        <input type="checkbox" name="zumba" id="zumba">
-        <label for="zumba">Zumba</label>
+                <input type="checkbox" name="step" id="step">
+                <label for="step">Step Interval</label>
 
-        <!-- addtl fields here, make required -->
-        <input type="submit">
+                <input type="checkbox" name="advxt" id="advxt">
+                <label for="advxt">Advanced Cross Training</label>
+
+                <input type="checkbox" name="mxfit" id="mxfit">
+                <label for="mxfit">MixxedFIT</label>
+
+                <input type="checkbox" name="zumba" id="zumba">
+                <label for="zumba">Zumba</label>
+
+                <p>Preferred Time:</p>
+
+                <input type="radio" name="time" id="am">
+                <label for="am">AM</label>
+                <input type="radio" name="time" id="pm">
+                <label for="pm">PM</label>
+            </fieldset>
+            <br>
+            <!-- addtl fields here, make required -->
+            <input type="submit" id="submit">
+        </div>
     </form>
+
+    <footer>
+        <em>Kimmy Walker &copy; 2023</em>
+    </footer>
 </body>
 
 </html>
